@@ -1,0 +1,13 @@
+{ 
+        "firstName": "Fake",
+        "lastName": "Person",
+        "birthdate": "2000-01-01",
+        "email": "findme@robot.com",
+        "phone": "9995555555",
+        "street1": "500 Cyber Ct.",
+        "street2": "Warehouse X",
+        "city": "Internet",
+        "stateProvince": "Web",
+        "postalCode": "123456",
+        "country": "None"
+      }

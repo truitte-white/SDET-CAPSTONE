@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+const addedContact = require('./test-data/addedContact.json')
 
 let firstNameCon = 'Fake'
 let lastNameCon = 'Person'
@@ -14,19 +15,7 @@ let countryCon = 'None'
 
 test('This test is to add(POST)a contact to the contact list and verify the contact details added', async ({ request }) => {
     let response = await request.post("/contacts", { //post request and response variable, data below added to post
-      data: { 
-        "firstName": "Fake",
-        "lastName": "Person",
-        "birthdate": "2000-01-01",
-        "email": "findme@robot.com",
-        "phone": "9995555555",
-        "street1": "500 Cyber Ct.",
-        "street2": "Warehouse X",
-        "city": "Internet",
-        "stateProvince": "Web",
-        "postalCode": "123456",
-        "country": "None"
-      }
+      data: addedContact
     });
     expect(response.status()).toBe(201) //http 201 status for created
     let contactData = await response.json() //json where data is stored 
