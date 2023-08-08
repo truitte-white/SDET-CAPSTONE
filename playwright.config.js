@@ -10,7 +10,7 @@ const { defineConfig, devices } = require('@playwright/test');
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
-let accessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJlOThjZmU3Nzg5YzAwMTNlZjJlNzIiLCJpYXQiOjE2OTA2NDgxMjh9.c-bEPboQyl0t3qjd8rrVzHwjn6o7zO59cYgG7bR5WT8'
+let accessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJlOThjZmU3Nzg5YzAwMTNlZjJlNzIiLCJpYXQiOjE2OTE1MTAxNDJ9.OzhQc81MkUmQy0eGg0Uf5pImwyZsqdztOAiQcsffZP4'
 
 module.exports = defineConfig({
   testDir: './tests',
